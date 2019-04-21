@@ -1,10 +1,11 @@
 {
-  "name": "ImageSplitter",
+  "name": "image-splitter",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "parcel build src/index.html",
+    "start": "parcel src/index.html --open"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,7 @@
   "homepage": "https://github.com/exKAZUu/ImageSplitter#readme",
   "devDependencies": {
     "parcel": "^1.12.3",
+    "renovate-config-exkazuu": "^1.0.0",
     "typescript": "^3.4.2"
   }
 }

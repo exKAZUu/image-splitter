@@ -19,8 +19,8 @@
   },
   "homepage": "https://github.com/exKAZUu/ImageSplitter#readme",
   "devDependencies": {
-    "parcel": "^1.12.3",
-    "renovate-config-exkazuu": "^1.0.0",
-    "typescript": "^3.4.2"
+    "parcel": "1.12.3",
+    "renovate-config-exkazuu": "1.0.0",
+    "typescript": "3.4.4"
   }
 }

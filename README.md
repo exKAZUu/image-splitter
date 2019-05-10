@@ -1,1 +1,1 @@
-# ImageSplitter
+# image-splitter

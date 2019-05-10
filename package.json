@@ -4,23 +4,27 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "parcel build src/index.html",
+    "build": "shx rm -Rf dist && parcel build src/index.html --public-url ./",
+    "create-empty-wercker-yml": "echo 'box: node\nbuild:\n  steps:' >> dist/wercker.yml",
+    "deploy": "yarn build && yarn create-empty-wercker-yml && gh-pages -d dist",
     "start": "parcel src/index.html --open"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/exKAZUu/ImageSplitter.git"
+    "url": "git+https://github.com/exKAZUu/image-splitter.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/exKAZUu/ImageSplitter/issues"
+    "url": "https://github.com/exKAZUu/image-splitter/issues"
   },
-  "homepage": "https://github.com/exKAZUu/ImageSplitter#readme",
+  "homepage": "https://github.com/exKAZUu/image-splitter#readme",
   "devDependencies": {
+    "gh-pages": "2.0.1",
     "parcel": "1.12.3",
     "renovate-config-exkazuu": "1.0.0",
+    "shx": "0.3.2",
     "typescript": "3.4.4"
   }
 }

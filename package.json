@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/exKAZUu/image-splitter#readme",
   "devDependencies": {
-    "gh-pages": "2.0.1",
+    "gh-pages": "2.1.0",
     "parcel": "1.12.3",
     "renovate-config-exkazuu": "1.0.0",
     "shx": "0.3.2",
